@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 // import { WithdrawComponent } from './withdraw/withdraw.component';
 // import { ETransferComponent } from './e-transfer/e-transfer.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { WithdrawComponent } from './withdraw/withdraw.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
     LoginComponent,
     DashboardComponent,
     MainLayoutComponent,
-    DepositComponent
+    DepositComponent,
+    WithdrawComponent
   ],
   imports: [
     BrowserModule,

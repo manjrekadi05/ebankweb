@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DepositComponent } from './deposit/deposit.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { AuthGuard } from './auth.guard';  
+import { WithdrawComponent } from './withdraw/withdraw.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -16,7 +17,8 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       { path: '', component: DashboardComponent },
-      { path: 'deposit', component: DepositComponent }, // Deposit route
+      { path: 'deposit', component: DepositComponent },
+      { path: 'withdraw', component: WithdrawComponent }, 
     ],
   },
 ];
